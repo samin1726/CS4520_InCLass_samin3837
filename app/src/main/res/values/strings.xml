@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BMI Calculator</string>
+    <string name="app_name">In Class Assignments</string>
     <string name="calculate_bmi_button">Calculate BMI</string>
     <string name="text_view_bmi">Body Mass Index (BMI)</string>
     <string name="text_view_bmi_button_instructions">Click on Calculate BMI to find your BMI</string>
@@ -9,4 +9,21 @@
     <string name="weight_metric">lb</string>
     <string name="text_box_feet">feet</string>
     <string name="text_box_inches">inches</string>
+    <string name="button_InClass01">InClass01</string>
+    <string name="button_InClass02">InClass02</string>
+    <string name="edit_text_person_name">Name</string>
+    <string name="edit_text_person_email">Email</string>
+    <string name="radio_group_title">I use:</string>
+    <string name="radio_group_option1">Android</string>
+    <string name="radio_group_option2">IOS</string>
+    <string name="mood_indicator">Your current mood:</string>
+    <string name="angry">Angry</string>
+    <string name="sad">Sad</string>
+    <string name="happy">Happy</string>
+    <string name="awesome">Awesome</string>
+    <string name="submit_button">Submit</string>
+    <string name="select_avatar">Select Your Avatar</string>
+    <string name="name_result">Name:</string>
+    <string name="email_result">Email:</string>
+
 </resources>
