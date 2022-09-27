@@ -20,7 +20,7 @@
             android:name=".SelectAvatar"
             android:exported="false" />
         <activity
-            android:name=".InClass02"
+            android:name=".EditProfile"
             android:exported="false" />
         <activity
             android:name=".InClass01"
