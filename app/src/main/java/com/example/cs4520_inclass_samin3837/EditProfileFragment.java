@@ -1,6 +1,5 @@
 package com.example.cs4520_inclass_samin3837;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -66,7 +65,7 @@ public class EditProfileFragment extends Fragment {
         name = view.findViewById(R.id.edit_text_person_name2);
         email = view.findViewById(R.id.edit_text_person_email2);
         defaultAvatar = view.findViewById(R.id.default_avatar2);
-        options = view.findViewById(R.id.radio_group);
+        options = view.findViewById(R.id.radio_group_2);
         moodBar = view.findViewById(R.id.seekBar2);
         moodIndicatorText = view.findViewById(R.id.mood_indicator2);
         sadImage = view.findViewById(R.id.sad_Image2);
@@ -74,7 +73,7 @@ public class EditProfileFragment extends Fragment {
         mood = "Happy";
         selectedEmotion = R.drawable.happy;
         selectedAvatar = R.drawable.select_avatar;
-        selectedOption = view.findViewById(R.id.android_button);
+        selectedOption = view.findViewById(R.id.android_button2);
 
         defaultAvatar.setOnClickListener(new View.OnClickListener() {
             @Override

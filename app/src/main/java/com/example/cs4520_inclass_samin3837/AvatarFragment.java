@@ -42,12 +42,12 @@ public class AvatarFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        female1 = view.findViewById(R.id.female_1);
-        female2 = view.findViewById(R.id.female_2);
-        female3 = view.findViewById(R.id.female_3);
-        male1 = view.findViewById(R.id.male_1);
-        male2 = view.findViewById(R.id.male_2);
-        male3 = view.findViewById(R.id.male_3);
+        female1 = view.findViewById(R.id.female_4);
+        female2 = view.findViewById(R.id.female_5);
+        female3 = view.findViewById(R.id.female_6);
+        male1 = view.findViewById(R.id.male_4);
+        male2 = view.findViewById(R.id.male_5);
+        male3 = view.findViewById(R.id.male_6);
 
         female1.setOnClickListener(new View.OnClickListener() {
             @Override

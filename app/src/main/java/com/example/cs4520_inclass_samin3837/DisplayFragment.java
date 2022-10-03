@@ -40,12 +40,12 @@ public class DisplayFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        profilePic = view.findViewById(R.id.image_display_activity);
-        nameResult = view.findViewById(R.id.nameResult);
-        emailResult = view.findViewById(R.id.emailResult);
-        phoneTypeResult = view.findViewById(R.id.phonetype_display_activity);
-        moodResult = view.findViewById(R.id.mood_display_activity);
-        moodPic = view.findViewById(R.id.mood_image);
+        profilePic = view.findViewById(R.id.image_display_activity2);
+        nameResult = view.findViewById(R.id.nameResult2);
+        emailResult = view.findViewById(R.id.emailResult2);
+        phoneTypeResult = view.findViewById(R.id.phonetype_display_activity2);
+        moodResult = view.findViewById(R.id.mood_display_activity2);
+        moodPic = view.findViewById(R.id.mood_image2);
 
         User user = (User) requireArguments().getSerializable("BundleKey2");
         profilePic.setImageResource(user.getAvatarImageID());

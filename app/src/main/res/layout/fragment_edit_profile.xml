@@ -45,29 +45,28 @@
         app:srcCompat="@drawable/select_avatar" />
 
     <RadioGroup
-        android:id="@+id/radio_group"
+        android:id="@+id/radio_group_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:checkedButton="@id/android_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/default_avatar2">
 
         <TextView
-            android:id="@+id/radio_group_title"
+            android:id="@+id/radio_group_title2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/radio_group_title" />
 
         <RadioButton
-            android:id="@+id/android_button"
+            android:id="@+id/android_button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/radio_group_option1" />
 
         <RadioButton
-            android:id="@+id/ios_button"
+            android:id="@+id/ios_button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/radio_group_option2" />
@@ -77,10 +76,9 @@
         android:id="@+id/mood_indicator2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:text="@string/mood_indicator"
-        app:layout_constraintStart_toStartOf="@+id/radio_group"
-        app:layout_constraintTop_toBottomOf="@+id/radio_group" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="410dp" />
 
     <SeekBar
         android:id="@+id/seekBar2"
