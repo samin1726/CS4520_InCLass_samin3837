@@ -1,14 +1,16 @@
 package com.example.cs4520_inclass_samin3837;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentResultListener;
+
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -18,7 +20,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class EditProfile extends AppCompatActivity {
+public class EditProfileFragment extends Fragment {
 
     private EditText name;
     private EditText email;
@@ -32,48 +34,63 @@ public class EditProfile extends AppCompatActivity {
     private String mood;
     private int selectedAvatar;
     private int selectedEmotion;
-    private ActivityResultLauncher<Intent> startActivityForResult
-            = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
-        @Override
-        public void onActivityResult(ActivityResult result) {
-            if (result.getResultCode() == RESULT_OK) {
-                selectedAvatar = result.getData().getIntExtra("selectedImage", 0);
-                defaultAvatar.setImageResource(selectedAvatar);
-            }
-        }
-    });
+
+
+    public EditProfileFragment() {
+        // Required empty public constructor
+    }
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_in_class02);
-        setTitle("Edit Profile Activity");
-        name = findViewById(R.id.edit_text_person_name);
-        email = findViewById(R.id.edit_text_person_email);
-        defaultAvatar = findViewById(R.id.default_avatar);
-        options = findViewById(R.id.radio_group);
-        moodBar = findViewById(R.id.seekBar);
-        moodIndicatorText = findViewById(R.id.mood_indicator);
-        sadImage = findViewById(R.id.sad_Image);
-        submitButton = findViewById(R.id.submit_button);
+        getParentFragmentManager().setFragmentResultListener("requestKey", this,
+                new FragmentResultListener() {
+                    @Override
+                    public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
+                        selectedAvatar = result.getInt("bundleKey");
+                    }
+                });
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_edit_profile, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        name = view.findViewById(R.id.edit_text_person_name2);
+        email = view.findViewById(R.id.edit_text_person_email2);
+        defaultAvatar = view.findViewById(R.id.default_avatar2);
+        options = view.findViewById(R.id.radio_group);
+        moodBar = view.findViewById(R.id.seekBar2);
+        moodIndicatorText = view.findViewById(R.id.mood_indicator2);
+        sadImage = view.findViewById(R.id.sad_Image2);
+        submitButton = view.findViewById(R.id.submit_button2);
         mood = "Happy";
         selectedEmotion = R.drawable.happy;
         selectedAvatar = R.drawable.select_avatar;
-        selectedOption = findViewById(R.id.android_button);
-
+        selectedOption = view.findViewById(R.id.android_button);
 
         defaultAvatar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(EditProfile.this, SelectAvatar.class);
-                startActivityForResult.launch(intent);
+                getParentFragmentManager().beginTransaction()
+                    .setReorderingAllowed(true)
+                    .add(R.id.fragmentContainerView, AvatarFragment.class, null)
+                    .addToBackStack("avatar")
+                    .commit();
             }
         });
 
         options.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                RadioButton checkedButton = findViewById(i);
+                RadioButton checkedButton = view.findViewById(i);
                 selectedOption = checkedButton;
             }
         });
@@ -123,7 +140,7 @@ public class EditProfile extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (email.getText().toString().matches("") || (name.getText().toString().matches(""))) {
-                    Toast.makeText(EditProfile.this, "enter an email and name!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), "enter an email and name!", Toast.LENGTH_LONG).show();
                 }
                 else {
                     String sendName = name.getText().toString();
@@ -132,16 +149,14 @@ public class EditProfile extends AppCompatActivity {
                     int emotionImageID = selectedEmotion;
                     int avatarID = selectedAvatar;
                     User user = new User(sendName, sendEmail, phoneType, mood, emotionImageID, avatarID);
-                    Intent intentToDisplayActivity = new Intent(EditProfile.this, DisplayActivity.class);
-                    intentToDisplayActivity.putExtra("user", user);
-                    startActivity(intentToDisplayActivity);
+                    Bundle result = new Bundle();
+                    result.putSerializable("BundleKey2", user);
+                    getParentFragmentManager().beginTransaction()
+                            .setReorderingAllowed(true)
+                            .add(R.id.fragmentContainerView, DisplayFragment.class, result)
+                            .commit();
                 }
             }
         });
-
-
-
-
-
     }
 }

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AvatarFragment">
+
+    <TextView
+        android:id="@+id/select_avatar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/select_avatar"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/female_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_avatar4"
+        app:srcCompat="@drawable/avatar_f_1" />
+
+    <ImageView
+        android:id="@+id/female_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/female_4"
+        app:srcCompat="@drawable/avatar_f_2" />
+
+    <ImageView
+        android:id="@+id/female_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        app:layout_constraintStart_toStartOf="@+id/female_4"
+        app:layout_constraintTop_toBottomOf="@+id/female_4"
+        app:srcCompat="@drawable/avatar_f_3" />
+
+    <ImageView
+        android:id="@+id/male_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/female_5"
+        app:srcCompat="@drawable/avatar_m_1" />
+
+    <ImageView
+        android:id="@+id/male_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        app:layout_constraintEnd_toEndOf="@+id/female_3"
+        app:layout_constraintStart_toStartOf="@+id/female_6"
+        app:layout_constraintTop_toBottomOf="@+id/female_6"
+        app:srcCompat="@drawable/avatar_m_2" />
+
+    <ImageView
+        android:id="@+id/male_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        app:layout_constraintEnd_toEndOf="@+id/male_4"
+        app:layout_constraintTop_toBottomOf="@+id/male_4"
+        app:srcCompat="@drawable/avatar_m_3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

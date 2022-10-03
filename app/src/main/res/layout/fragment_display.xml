@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayFragment" >
+
+    <ImageView
+        android:id="@+id/image_display_activity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar_f_1" />
+
+    <TextView
+        android:id="@+id/emailResult2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/nameResult"
+        app:layout_constraintTop_toBottomOf="@+id/nameResult" />
+
+    <TextView
+        android:id="@+id/name_display_activity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/name_result"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_display_activity2" />
+
+    <TextView
+        android:id="@+id/email_display_activity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_result"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/name_display_activity2"
+        app:layout_constraintTop_toBottomOf="@+id/name_display_activity2" />
+
+    <TextView
+        android:id="@+id/phonetype_display_activity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/name_display_activity2"
+        app:layout_constraintTop_toBottomOf="@+id/email_display_activity2" />
+
+    <TextView
+        android:id="@+id/mood_display_activity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/email_display_activity2"
+        app:layout_constraintTop_toBottomOf="@+id/phonetype_display_activity2" />
+
+    <ImageView
+        android:id="@+id/mood_image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mood_display_activity2"
+        app:srcCompat="@drawable/angry" />
+
+    <TextView
+        android:id="@+id/nameResult2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/name_display_activity"
+        app:layout_constraintTop_toTopOf="@+id/name_display_activity" />
+</androidx.constraintlayout.widget.ConstraintLayout>

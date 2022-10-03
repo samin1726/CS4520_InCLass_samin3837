@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button inClass1;
     private Button inClass2;
+    private Button inClass3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         inClass1 = findViewById(R.id.inClass01);
         inClass2 = findViewById(R.id.inClass02);
+        inClass3 = findViewById(R.id.inClass03);
 
         inClass1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,5 +37,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        inClass3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, EditProfile.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }
