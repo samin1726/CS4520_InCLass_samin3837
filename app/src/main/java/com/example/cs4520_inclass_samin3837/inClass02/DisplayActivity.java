@@ -1,10 +1,13 @@
-package com.example.cs4520_inclass_samin3837;
+package com.example.cs4520_inclass_samin3837.inClass02;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.cs4520_inclass_samin3837.R;
+import com.example.cs4520_inclass_samin3837.User;
 
 public class DisplayActivity extends AppCompatActivity {
 

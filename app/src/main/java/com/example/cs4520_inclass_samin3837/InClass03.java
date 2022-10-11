@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.cs4520_inclass_samin3837.inClass03.EditProfileFragment;
+
 public class InClass03 extends AppCompatActivity {
 
     @Override

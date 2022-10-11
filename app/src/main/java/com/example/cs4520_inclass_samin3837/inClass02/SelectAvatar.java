@@ -1,4 +1,4 @@
-package com.example.cs4520_inclass_samin3837;
+package com.example.cs4520_inclass_samin3837.inClass02;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.example.cs4520_inclass_samin3837.R;
 
 public class SelectAvatar extends AppCompatActivity {
 

@@ -1,16 +1,17 @@
-package com.example.cs4520_inclass_samin3837;
+package com.example.cs4520_inclass_samin3837.inClass01;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.cs4520_inclass_samin3837.R;
 
 public class InClass01 extends AppCompatActivity implements TextWatcher {
 

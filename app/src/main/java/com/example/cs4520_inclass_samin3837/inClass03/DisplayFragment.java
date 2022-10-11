@@ -1,4 +1,4 @@
-package com.example.cs4520_inclass_samin3837;
+package com.example.cs4520_inclass_samin3837.inClass03;
 
 import android.os.Bundle;
 
@@ -11,6 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.cs4520_inclass_samin3837.R;
+import com.example.cs4520_inclass_samin3837.User;
 
 public class DisplayFragment extends Fragment {
 

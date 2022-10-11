@@ -8,7 +8,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
-        android:name="com.example.cs4520_inclass_samin3837.EditProfileFragment"
+        android:name="com.example.cs4520_inclass_samin3837.inClass03.EditProfileFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:visibility="visible"

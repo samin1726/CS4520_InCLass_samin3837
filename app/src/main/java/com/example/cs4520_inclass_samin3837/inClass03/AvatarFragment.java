@@ -1,4 +1,4 @@
-package com.example.cs4520_inclass_samin3837;
+package com.example.cs4520_inclass_samin3837.inClass03;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import com.example.cs4520_inclass_samin3837.R;
 
 public class AvatarFragment extends Fragment {
 

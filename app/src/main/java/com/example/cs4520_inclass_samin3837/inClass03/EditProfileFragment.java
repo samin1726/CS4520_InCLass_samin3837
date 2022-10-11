@@ -1,4 +1,4 @@
-package com.example.cs4520_inclass_samin3837;
+package com.example.cs4520_inclass_samin3837.inClass03;
 
 import android.os.Bundle;
 
@@ -18,6 +18,9 @@ import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.cs4520_inclass_samin3837.R;
+import com.example.cs4520_inclass_samin3837.User;
 
 public class EditProfileFragment extends Fragment {
 

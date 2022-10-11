@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DisplayFragment" >
+    tools:context=".inClass03.DisplayFragment" >
 
     <ImageView
         android:id="@+id/image_display_activity2"
@@ -21,8 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/nameResult"
-        app:layout_constraintTop_toBottomOf="@+id/nameResult" />
+        app:layout_constraintStart_toStartOf="@+id/nameResult2"
+        app:layout_constraintTop_toBottomOf="@+id/nameResult2" />
 
     <TextView
         android:id="@+id/name_display_activity2"
@@ -83,6 +83,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/name_display_activity"
-        app:layout_constraintTop_toTopOf="@+id/name_display_activity" />
+        app:layout_constraintStart_toEndOf="@+id/name_display_activity2"
+        app:layout_constraintTop_toTopOf="@+id/name_display_activity2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

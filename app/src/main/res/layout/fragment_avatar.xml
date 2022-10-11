@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AvatarFragment">
+    tools:context=".inClass03.AvatarFragment">
 
     <TextView
         android:id="@+id/select_avatar4"
@@ -71,7 +71,7 @@
         android:layout_marginTop="50dp"
         android:scaleX="0.75"
         android:scaleY="0.75"
-        app:layout_constraintEnd_toEndOf="@+id/female_3"
+        app:layout_constraintEnd_toEndOf="@+id/female_4"
         app:layout_constraintStart_toStartOf="@+id/female_6"
         app:layout_constraintTop_toBottomOf="@+id/female_6"
         app:srcCompat="@drawable/avatar_m_2" />
