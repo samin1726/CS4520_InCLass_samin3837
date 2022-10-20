@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.example.cs4520_inclass_samin3837.inClass01.InClass01;
 import com.example.cs4520_inclass_samin3837.inClass02.EditProfile;
+import com.example.cs4520_inclass_samin3837.inClass05.InClass05;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button inClass2;
     private Button inClass3;
     private Button inClass4;
+    private Button inClass5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         inClass2 = findViewById(R.id.inClass02);
         inClass3 = findViewById(R.id.inClass03);
         inClass4 = findViewById(R.id.inClass04);
+        inClass5 = findViewById(R.id.inClass05);
 
         inClass1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +58,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, InClass04.class);
+                startActivity(intent);
+            }
+        });
+
+        inClass5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, InClass05.class);
                 startActivity(intent);
             }
         });

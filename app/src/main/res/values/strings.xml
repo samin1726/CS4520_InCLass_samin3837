@@ -13,6 +13,7 @@
     <string name="button_InClass02">InClass02</string>
     <string name="button_InClass03">InClass03</string>
     <string name="button_InClass04">InClass04</string>
+    <string name="button_InClass05">InClass05</string>
     <string name="edit_text_person_name">Name</string>
     <string name="edit_text_person_email">Email</string>
     <string name="radio_group_title">I use:</string>
@@ -33,6 +34,11 @@
     <string name="maximum">Maximum:</string>
     <string name="average">Average:</string>
     <string name="generate_number">Generate Number</string>
+    <string name="image_search">Image Search</string>
+    <string name="go_button">Go</string>
+    <string name="enter_destination">destination</string>
+    <string name="search_to_display_img">search something to display an image!</string>
+
 
 
 </resources>
