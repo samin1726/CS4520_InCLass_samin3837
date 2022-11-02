@@ -18,6 +18,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".inClass07.NotesDisplayActivity"
+            android:exported="true" />
+        <activity
+            android:name=".inClass07.inClass07"
+            android:exported="true" />
+        <activity
             android:name=".inClass05.InClass05"
             android:exported="false" />
         <activity

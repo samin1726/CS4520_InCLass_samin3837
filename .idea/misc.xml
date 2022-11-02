@@ -10,11 +10,15 @@
         <entry key="app/src/main/res/layout/activity_in_class03.xml" value="0.25181159420289856" />
         <entry key="app/src/main/res/layout/activity_in_class04.xml" value="0.21952583202417342" />
         <entry key="app/src/main/res/layout/activity_in_class05.xml" value="0.23130866893823604" />
+        <entry key="app/src/main/res/layout/activity_in_class07.xml" value="0.254949951171875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_notes_display.xml" value="0.2509057971014493" />
         <entry key="app/src/main/res/layout/activity_select_avatar.xml" value="0.20643363728470113" />
+        <entry key="app/src/main/res/layout/fragment_add.xml" value="0.2509057971014493" />
         <entry key="app/src/main/res/layout/fragment_avatar.xml" value="0.25181159420289856" />
         <entry key="app/src/main/res/layout/fragment_display.xml" value="0.25181159420289856" />
         <entry key="app/src/main/res/layout/fragment_edit_profile.xml" value="0.25181159420289856" />
+        <entry key="app/src/main/res/layout/list_item_in_class_07.xml" value="0.2509057971014493" />
       </map>
     </option>
   </component>
