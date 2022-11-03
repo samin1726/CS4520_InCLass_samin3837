@@ -122,7 +122,6 @@ public class inClass07 extends AppCompatActivity {
                                 @Override
                                 public void onFailure(@NonNull Call call, @NonNull IOException e) {
                                     e.printStackTrace();
-                                    Log.d("demo", "onResponse: onFailure ");
                                 }
 
                                 @Override
@@ -130,9 +129,7 @@ public class inClass07 extends AppCompatActivity {
                                     if (response.isSuccessful()) {
                                         ResponseBody responseBody = response.body();
                                         Gson gsonData = new Gson();
-                                        Log.d("demo", "onResponse: Response Successful");
                                         Notes notes = gsonData.fromJson(responseBody.charStream(), Notes.class);
-                                        Log.d("demo", "onResponse: " + notes.toString());
                                         Intent intent = new Intent(inClass07.this, NotesDisplayActivity.class);
                                         intent.putExtra("Notes", notes);
                                         intent.putExtra("Access Token", auth.getToken());
@@ -144,7 +141,7 @@ public class inClass07 extends AppCompatActivity {
                                         });
                                     }
                                     else {
-                                        Log.d("demo", "onResponse: Failure " + response.code());
+
                                     }
                                 }
                             });

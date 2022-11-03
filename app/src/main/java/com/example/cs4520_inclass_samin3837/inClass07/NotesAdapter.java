@@ -46,7 +46,6 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> 
         holder.getButtonDelete().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("demo", "onClick: " + notes.getNotes());
                 RequestBody requestBody = new FormBody.Builder()
                         .add("id", notes.getNotes().get(holder.getAdapterPosition()).get_id())
                         .build();
